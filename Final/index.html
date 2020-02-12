@@ -1,0 +1,148 @@
+<!--                                                                             -->
+<!--                              Kevin Atherton                                 -->
+<!--                               May 8, 2019                                   -->
+<!--                           WEB114 Final Project                              -->
+<!--                                                                             -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="game.css" type="text/css">
+        <script src="game.js"></script>
+        <title>JavaScript Game</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1 class="light">Lets Play a JavaScript Game!</h1>
+                <h3 class="light">Click on the following sections to play parts of the game</h3>
+            </header>
+            <main>
+                <h2><a href="#"><span>+</span> Game 1: Do Some Math</a></h2>
+                <div class="hidden">
+                    <label for="num1" class="light">Enter Two Numbers and a Math Operator:</label>
+                    <input type="text" id="num1">
+                    <select id="mathOperation">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">&times;</option>
+                        <option value="/">&divide;</option>
+                        <option value="%">%</option>
+                        <option value="**">**</option>
+                    </select>
+                    <input type="text" id="num2">
+                    <input type="button" id="calculate" value="Show Calculation">
+                    <br>
+                    <label class="light">The Resulting Equation:</label>
+                    <span id=mathOperationResult class="light">&nbsp;</span>
+                </div><!--closing div first game-->
+                <h2><a href="#"><span>+</span> Game 2: Lets Increment/Decrement</a></h2>
+                <div class="hidden">
+                    <label class="light">Increment and Decrement by pressing +/- :</label>
+                    <input type="button" id="decByOne" value="-1">
+                    <input type="text" id="random1" disabled>
+                    <input type="button" id="incByOne" value="+1">
+                    <br>
+                    <label class="light">Enter a number to increase/decrease by:</label>
+                    <input type="text" id="incdecBy">
+                    <input type="button" id="decBy" value="-">
+                    <input type="text" id="random2" disabled>
+                    <input type="button" id="incBy" value="+">
+                    <br>
+                    <span id="error" class="error">&nbsp;</span>
+                </div><!--closing div for second game-->
+                <h2><a href="#"><span>+</span> Game 3: Comparison Quiz</a></h2>
+                <div id="quiz" class="hidden">
+                    <span class="light">Look at the following comparisons and choose if it's true or false</span>
+                    <h3 id="quizResult" class="light">Good Luck!</h3>
+                    <input type="text" id="1" value="10" disabled>
+                    <span class="light">&gt;</span>
+                    <input type="text" id="2" value="20" disabled>
+                    <select id="question1">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="3" value="35" disabled>
+                    <span class="light">&gt;&equals;</span>
+                    <input type="text" id="4" value="35" disabled>
+                    <select id="question2">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="5" value="15" disabled>
+                    <span class="light">&lt;&equals;</span>
+                    <input type="text" id="6" value="25" disabled>
+                    <select id="question3">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="7" value='"10"' disabled>
+                    <span class="light">&equals;&equals;&equals;</span>
+                    <input type="text" id="8" value="10" disabled>
+                    <select id="question4">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="9" value="20" disabled>
+                    <span class="light">&excl;&equals;</span>
+                    <input type="text" id="10" value="20" disabled>
+                    <select id="question5">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="11" value="15" disabled>
+                    <span class="light">&excl;&equals;&equals;</span>
+                    <input type="text" id="12" value='"15"' disabled>
+                    <select id="question6">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="text" id="13" value="40" disabled>
+                    <span class="light">&gt;</span>
+                    <input type="text" id="14" value="30" disabled>
+                    <span class="light">&amp;&amp;</span>
+                    <input type="text" id="15" value='"30"' disabled>
+                    <span class="light">&lt;</span>
+                    <input type="text" id="16" value="40" disabled>
+                    <select id="question7">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                    <br>
+                    <input type="button" id="checkAnswers" value="Check Answers">
+                    <br>
+                </div><!--closing div for third game-->
+                <h2><a href="#"><span>+</span> Game 4: Spot the Cat!</a></h2>
+                <div class="hidden">
+                    <h3 class="light">Select the image below of my cat, Loki!</h3>
+                    <ul id="imageList">
+                        <li><a href="images/Bear.jpg"><img src="images/thumbnails/Bear.jpg" alt="Picture of a Bear"></a></li>
+                        <li><a href="images/Horse.jpg"><img src="images/thumbnails/Horse.jpg" alt="Picture of a Horse"></a></li>
+                        <li><a href="images/Loki.JPG"><img src="images/thumbnails/Loki.jpg" alt="Picture of my cat Loki"></a></li>
+                        <li><a href="images/Pupper.jpg"><img src="images/thumbnails/Pupper.jpg" alt="Picture of a Dog"></a></li>
+                    </ul>
+                    <img id="selectedImage" src="images/Bear.jpg" alt="Blown up image of either a Bear, Horse, Dog, or Loki">
+                    <br>
+                    <input type="button" id="checkLoki" value="Check Answer">
+                </div><!--closing div for the fourth game-->
+                <div>
+                    <label for="lightMode" class="light">Light Mode</label>
+                    <input type="radio" name="viewMode" id="lightMode" checked>
+                    <label for="darkMode" class="light">Dark Mode</label>
+                    <input type="radio" name="viewMode" id="darkMode">
+                </div><!--closing generic div that centers these controls-->
+            </main>
+            <footer>
+                <span class="light">&copy;2019 Kevin Atherton</span>
+            </footer>
+        </div><!--closing wrapper div-->
+    </body>
+</html>

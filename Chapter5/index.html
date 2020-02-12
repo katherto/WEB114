@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="ch5.css" type="text/css">
+        <script src="ch5.js"></script>
+        <title>Math and JavaScript</title>
+    </head>
+    <div id="wrapper">
+        <header>
+            <h1>Math and JavaScript Differences</h1>
+        </header>
+        <body>
+            <h2>The differences between using +, -, *, /, %, and **</h2>
+            <div class="border">
+                <h3>Using +</h3>
+                <p>This operator can be used in both arithmetic and string concatenation.</p>
+
+                <h4>Arithmetic Usage</h4>
+                <label for="plusMath">Enter Two Numbers: </label>
+                <input type="text" id="plusMath1">
+                <span class="operator">+</span>
+                <input type="text" id="plusMath2">
+                <input type="button" id="calculate1" value="=">
+                <input type="text" id="result1" disabled>
+
+                <h4>String Concatenation Usage</h4>
+                <label for="plusString">Enter Your Age as a Number</label>
+                <input type="text" id="plusString1" value="You are " disabled>
+                <span class="operator">+</span>
+                <input type="text" id="plusString2">
+                <input type="button" id="calculate2" value="=">
+                <input type="text" id="result2" disabled>
+            </div><!--closing generic div that creates a border around "+" usage content-->
+
+            <div class="border">
+                <h3>Using -, *, /, %, and **</h3>
+                <p>These operators can be used in arithmetic with strings that are numbers, numbers, and a combination of both.</p>
+
+                <h4>Subtraction ( - ) Usage</h4>
+                <label for="subtract">Enter Two Numbers: </label>
+                <input type="text" id="subtract1">
+                <span class="operator">-</span>
+                <input type="text" id="subtract2">
+                <input type="button" id="calculate3" value="=">
+                <input type="text" id="result3" disabled>
+
+                <h4>Multiplication ( * ) Usage</h4>
+                <label for="multiply">Enter Two Numbers: </label>
+                <input type="text" id="multiply1">
+                <span class="operator">&times;</span>
+                <input type="text" id="multiply2">
+                <input type="button" id="calculate4" value="=">
+                <input type="text" id="result4" disabled>
+
+                <h4>Division ( / ) Usage</h4>
+                <label for="divide">Enter Two Numbers: </label>
+                <input type="text" id="divide1">
+                <span class="operator">&divide;</span>
+                <input type="text" id="divide2">
+                <input type="button" id="calculate5" value="=">
+                <input type="text" id="result5" disabled>
+
+                <h4>Modulus ( % ) Usage to Obtain the Remainder</h4>
+                <label for="remainder">Enter Two Numbers: </label>
+                <input type="text" id="remainder1">
+                <span class="operator">%</span>
+                <input type="text" id="remainder2">
+                <input type="button" id="calculate6" value="=">
+                <input type="text" id="result6" disabled>
+
+                <h4>Exponential ( ** ) Usage</h4>
+                <label for="exponent">Enter One Number: </label>
+                <input type="text" id="exponent1" value="5" disabled>
+                <span class="operator">^</span>
+                <input type="text" id="exponent2">
+                <input type="button" id="calculate7" value="=">
+                <input type="text" id="result7" disabled>
+            </div><!--closing generic div that creates a border around "-, *, /, %, and **" usage content-->
+
+            <h2>The Differences Between =, ==, and ===</h2>
+            <div class="border">
+                <p>
+                    "=" is an assignment operator in JavaScript.  It's used to assign objects, functions, and values to variables.<br>
+                    "==" is a comparison operator in JavaScript.  It's used to compare two values and will return a true or false.<br>
+                    "===" is also a comparison operator in Javascript.  While comparing for equality like "==" it takes it a step further and compares object types then evaluates as true or false.<br>
+                </p>
+
+                <h4>Using the Assignment ( = ) Operator</h4>
+                <label for="assignment">Enter anything to assign to the variable yourInput</label>
+                <span class="operator">=</span>
+                <input type="text" id="assignment">
+                <input type="button" id="showAssignment" value="Assign">
+                <br>
+                <label for="assignmentResult">yourInput = </label>
+                <input type="text" id="assignmentResult" disabled>
+                
+                <h4>Using the Comparison ( == ) Operator</h4>
+                <label for="comparison1">Enter two values either as numbers or words</label>
+                <input type="text" id="comparison1">
+                <span class="operator">==</span>
+                <input type="text" id="comparison2">
+                <input type="button" id="evaluate1" value="Evaluate"><br>
+                <input type="text" class="comparison" id="evaluate1Result" value="Click the Evaluate Button to Compare" disabled>
+                
+                <h4>Using the Comparison ( === ) Operator</h4>
+                <label for="comparison2">Enter the shown number</label>
+                <input type="text" id="comparison3" value="" disabled>
+                <span class="operator">===</span>
+                <input type="text" id="comparison4">
+                <input type="button" id="evaluate2" value="Evaluate"><br>
+                In this example, your input will be cast as a number and compared to the number given, which, is a string
+                <input type="text" class="comparison" id="evaluate2Result" value="Click the Evaluate Button to Compare" disabled>
+            </div><!--closing generic div that creates a border around "=, ==, ===" usage content-->
+
+            <h2>Math Order of Operations</h2>
+            <div class="border">
+                <p>
+                    The math order of operations works in JavaScript as it would in Algebra.
+                    Overriding the order of operations with parenthesis "( )" works just the same as well.
+                    The order of operations is:</p>
+                <ol>
+                    <li>Exponents and Roots</li>
+                    <li>Multiplication and Division</li>
+                    <li>Addition and Subtraction</li>
+                </ol>
+
+                <h4>Enter three numbers to see an example</h4><br>
+                <input type="text" class="order" id="order1">
+                <input type="text" class="order" id="order2">
+                <input type="text" class="order" id="order3">
+                <input type="button" id="calculate8" value="Calculate"><br><br>
+
+                <input type="text" class="order" id="orderResult1" disabled>
+                <span class="operator">&divide;</span>
+                <input type="text" class="order" id="orderResult2" disabled>
+                <span class="operator">+</span>
+                <input type="text" class="order" id="orderResult3" disabled>
+                <span class="operator">=</span>
+                <input type="text" class="order" id="orderResult4" disabled>
+                <br>
+                <input type="text" class="order" id="orderResult5" disabled>
+                <span class="operator">&divide; ( </span>
+                <input type="text" class="order" id="orderResult6" disabled>
+                <span class="operator">+</span>
+                <input type="text" class="order" id="orderResult7" disabled>
+                <span class="operator"> ) =</span>
+                <input type="text" class="order" id="orderResult8" disabled>
+            </div><!--closing generic div that creates a border around math order of operations content-->
+        </body>
+    </div>
+</html>

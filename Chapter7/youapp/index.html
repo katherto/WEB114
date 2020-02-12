@@ -1,0 +1,68 @@
+<!---------------------------------------------------------------------------------->
+<!--                                Kevin Atherton                                -->
+<!--                                April 30, 2019                                -->
+<!--                                    YouApp                                    -->
+<!--    Re-purposed as my cat app since I don't have many great pictures of me    -->
+<!---------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="youapp.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="youapp.js"></script>
+        <title>Loki App</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Meet Loki!</h1>
+            <div><!--Div for showing Loki's growth in a year using rollover images-->
+                <ul id="lokiGrowth">
+                    <li><a href="images/rollover1.JPG"></a></li>
+                    <li><a href="images/rollover2.JPG"></a></li>
+                </ul>
+                <img id="rolloverImage" src="images/rollover1.JPG" alt="A picture of my cat Loki" class="left">
+                <p><span id="metrics">
+                    Age: Approximately 1.5 Years<br>
+                    Weight: 12 lbs 6 oz<br>
+                    Gender: Male<br>
+                    Adoption Date: February 14, 2018<br>
+                    Pattern: Black &amp; White Tuxedo</span>
+                </p>
+                <p><span id="description">
+                    I found Loki's profile online at PetFinder.com.
+                    He was classified as a feral kitten since he was very shy and never approached people, keeping to himself.
+                    A farmer in Emporia, Kansas trapped him and took him to a local shelter.
+                    They had him for about a month before I adopted him.
+                    It took about three days before Loki stopped hiding all the time at home and began to approach me.
+                    Loki is the first pet I've had for myself and he's quite the handful!
+                    He's always energetic and constantly wants to play, running around and playing fetch with the toy balls I've bought him.</span>
+                </p>
+                <h2>Mouse over the left picture to see his growth!</h2>
+            </div><!--Closing generic div for rollover images-->
+            
+            <div><!--Div for showing a slideshow of pictures of Loki-->
+                <ul id="lokiSlideshow">
+                    <li><a href="images/slide1.JPG"></a></li>
+                    <li><a href="images/slide2.JPG"></a></li>
+                    <li><a href="images/slide3.JPG"></a></li>
+                    <li><a href="images/slide4.JPG"></a></li>
+                    <li><a href="images/slide5.JPG"></a></li>
+                    <li><a href="images/slide6.jpeg"></a></li>
+                    <li><a href="images/slide7.JPG"></a></li>
+                    <li><a href="images/slide8.JPG"></a></li>
+                    <li><a href="images/slide9.JPG"></a></li>
+                    <li><a href="images/slide10.JPG"></a></li>
+                </ul>
+                <h1>Loki Through the Year</h1>
+                <div id="buttonContainer">
+                    <input type="button" id="start" value="Start Slideshow">
+                    <input type="button" id="pause" value="Pause Slideshow" disabled="true">
+                </div><!--Closing generic div that centers two buttons-->
+                <img id="slideshow" src="images/slide1.JPG" alt="A slideshow of pictures of my cat Loki">
+            </div><!--Closing div for slideshow pictures-->
+        </div><!--Closing wrapper div-->
+    </body>
+</html>

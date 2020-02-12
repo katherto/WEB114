@@ -1,0 +1,31 @@
+<!--Kevin Atherton
+    February 13, 2019
+    JavaScript I - WEB 114-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate Area and Perimeter</title>
+    <script>
+        var length = parseFloat(prompt("Enter length of the rectangle")); //assign length variable from parsing input from user
+        var width = parseFloat(prompt("Enter width of the rectangle")); //assign width variable from parsing input from the user
+        
+        var area = length * width; //calculate and assign area of the rectangle
+        var perimeter = (2 * length) + (2 * width); //calculate and assign perimeter of the rectangle
+    </script>
+</head>
+<body>
+    <main>
+        <h1>The Area and Perimeter App</h1>
+        <script>
+            //write the results to the browser window
+            document.write("Length = " + length + "<br>");
+            document.write("Width = " + width + "<br><br>");
+            document.write("Area = " + area + "<br>");
+            document.write("Perimeter = " + perimeter + "<br><br>");
+        </script>
+        Thanks for using the Area and Perimeter application!
+    </main>
+</body>
+</html>

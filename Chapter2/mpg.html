@@ -1,0 +1,28 @@
+<!--Kevin Atherton
+    February 13, 2019
+    JavaScript I - WEB 114-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate Miles Per Gallon</title>
+    <script>
+        var miles = prompt("Enter miles driven");
+        miles = parseFloat(miles);
+        var gallons = prompt("Enter gallons of gas used");
+        gallons = parseFloat(gallons);
+        var mpg = miles/gallons;
+        mpg = parseInt(mpg);
+    </script>
+</head>
+<body>
+    <h1>The Miles Per Gallon Application</h1>
+    <script>
+        document.write("Miles Driven = " + miles + "<br>");
+        document.write("Gallons of gas = " + gallons + "<br><br>");
+        document.write("Miles per gallon = " + mpg + "<br><br>");
+    </script>
+    Thanks for using our MPG application.
+</body>
+</html>

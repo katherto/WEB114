@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Questions and Answers</title>
+        <script>
+            var questions = []; //array to hold user questions
+            var answers = []; //array to hold answers to each question
+            var again = "y"; //conditional variable to continue entering questions
+
+            do { //ask user to enter questions and answers and store in the arrays
+                questions[questions.length] = prompt("Please enter a Question ");
+                answers[answers.length] = prompt("Please enter the answer");
+                again = prompt("Would you like to enter another question?", "y");
+            } while (again == "y");
+
+            for (var i = 0; i < questions.length; i++) { //step through arrays and display the questions and answers set by the user
+                document.write("<b>Question " + (i + 1) + "</b>: " + questions[i] + 
+                               "<br><b>Answer: </b>" + answers[i] + "<br><br>");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Thanks for using the Questions and Answers app!</h1>
+    </body>
+</html>
