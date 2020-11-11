@@ -1,0 +1,29 @@
+body {
+    margin:0;
+    padding: 0;
+    background: #444444;
+}
+
+.main {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.nes-container {
+    background-color: aquamarine;
+}
+
+.nes-container.with-title > .title {
+    text-align: center;
+    margin: -2rem auto 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.nes-field {
+    margin-bottom:30px;
+}

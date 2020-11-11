@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>8-Bit Web Design</title>
+    <!-- CSS provided by NES.css: https://nostalgic-css.github.io/NES.css/ -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <h1><i class="nes-mario"></i> Welcome to 8-Bit <br />Web Design! <i class="nes-bulbasaur"></i></h1>
+        <div class="nes-container with-title">
+            <p class="title">Throwback to retro gaming!</p>
+            <p>8-Bit Web Design focuses on creating retro-themed websites to fit any business' needs! We offer top of
+                the line retro themed designs with a bit of early 2000's web design flairs in order to really attract
+                your customer's attention. </p>
+            <p>Some of our services include sparkles coming off of the mouse cursor as it moves, blinking text on a page
+                to attract a customer's eyes, music that blares loudly no matter what volume a user's computer is at,
+                and so much more...</p>
+            <br />
+            <br />
+            <p>Fill out the form below to let us know what you're interested in and we'll get back to you!</p>
+            <br />
+            <form id="contact">
+                <div class="nes-field">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" class="nes-input">
+                </div>
+                <div class="nes-field">
+                    <label for="email">Your email</label>
+                    <input type="text" id="email" class="nes-input">
+                </div>
+                <div class="nes-field">
+                    <label for="business">Your business name</label>
+                    <input type="text" id="business" class="nes-input">
+                </div>
+                <div class="nes-field">
+                    <label for="summary">A brief summary of your business</label>
+                    <textarea type="text" id="summary" class="nes-textarea"></textarea>
+                </div>
+                <div class="nes-field">
+                        <label>I have money and can pay for this</label>
+                        <label>
+                            <input type="radio" class="nes-radio" id="check_true" name="answer" /><span>True</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" class="nes-radio" id="check_false" name="answer" /><span>False</span>
+                        </label>
+                </div>
+                <div class="nes-field">
+                        <label>I am interested in the following services (check all that apply):</label>
+                        <label>
+                            <input type="checkbox" class="nes-checkbox" id="full_redesign" /><span>Full website redesign using an 8-Bit theme</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="nes-checkbox" id="sparkle" /><span>Sparkle cursors</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="nes-checkbox" id="blink" /><span>Blinking text to attract customers</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="nes-checkbox" id="music" /><span>Theme music to play when the user visits the page</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="nes-checkbox" id="colors" /><span>Really bright colors</span>
+                        </label>
+                </div>
+                <button type="button" class="nes-btn is-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
