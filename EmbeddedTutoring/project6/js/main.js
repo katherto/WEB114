@@ -7,7 +7,7 @@ document.querySelector(".nes-btn").addEventListener("click", () => {
 
   inputs.forEach((input) => {
     if (input.type === "checkbox" && input.checked) {
-      // this is a deviation from instructions because I liked formatted output
+      // this is a deviation from instructions because I like formatted output
       // actual solution: `${input.labels[0].innerText}: ${input.checked}\n`
       output += `${input.labels[0].innerText}: ${
         input.checked ? "Yes" : "No"
@@ -18,7 +18,7 @@ document.querySelector(".nes-btn").addEventListener("click", () => {
         input.labels[0].innerText === "True" ? "Yes" : "No"
       }\n`;
     } else {
-      // skips outputting the unchecked radio button
+      // skips outputting unchecked inputs
       if (input.type === "radio" || input.type === "checkbox") {
         return;
       }
